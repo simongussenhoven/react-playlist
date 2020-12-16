@@ -1,8 +1,8 @@
-function ListItem() {
+function ListItem(props) {
   return (
-    <ul>
-        <li className="list__item">This is a listItem</li>
-    </ul>
+    <div className="row">
+      <span>{props.title}</span><span>{props.artist}</span><span>{props.genre}</span><span>{props.rating}</span>
+    </div>
   );
 }
 
