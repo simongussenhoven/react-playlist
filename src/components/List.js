@@ -1,12 +1,17 @@
 import ListItem from './ListItem'
+import TableHeader from './TableHeader'
 
 function List(props) {
     const items = props.songs.map(song => {
-      return <ListItem {...song} deleteItem={props.deleteItem}/>
+      if (song.visible) {
+        return <ListItem {...song} deleteItem={props.deleteItem} key={song.id}/>
+       }else{
+         console.log(`${song.id} is invisible`)
+        }
     })
     return (
     <div className="list">
-        <h2>Checkout my playlist!</h2>
+        <TableHeader filter={props.filter}/>
         {items}
     </div>
   );
