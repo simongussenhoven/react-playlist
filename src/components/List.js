@@ -5,9 +5,8 @@ function List(props) {
     const items = props.songs.map(song => {
       if (song.visible) {
         return <ListItem {...song} deleteItem={props.deleteItem} key={song.id}/>
-       }else{
-         console.log(`${song.id} is invisible`)
-        }
+       }
+       return null
     })
     return (
     <div className="list">
