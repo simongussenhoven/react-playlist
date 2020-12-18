@@ -2,6 +2,8 @@ import React from 'react';
 import Nav from './Nav';
 import List from './List';
 import Form from './Form';
+import About from './About'
+
 
 class App extends React.Component {
   constructor (){
@@ -84,7 +86,7 @@ const songs = this.state.songs
       }
     })
   }
-  
+
 //set new state
   this.setState({
     songs
@@ -94,7 +96,7 @@ const songs = this.state.songs
   render(){
     return (
       <div className="app">
-        <Nav/>
+        
         <Form 
         addItem={this.addItem}
         songs={this.state.songs}

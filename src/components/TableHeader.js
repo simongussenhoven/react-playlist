@@ -21,6 +21,7 @@ import React from 'react'
 
   render() {
     return (
+      
       <div className="list__row"> 
       <span>Title</span>
       <span>Artist</span>

@@ -18,6 +18,7 @@ function Form(props) {
 
     return (
       <form onSubmit = {handleSubmit}>
+          <h2>Add a new song</h2>
           <input name='title' type='text' required></input>
           <input name='artist' type='text' required></input>
           <select name='genre' required>

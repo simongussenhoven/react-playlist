@@ -11,6 +11,8 @@ function List(props) {
     })
     return (
     <div className="list">
+      <h2>Playlist</h2>
+      <p>Click on a song to delet it from your list.</p>
         <TableHeader 
         filter={props.filter}
         />
