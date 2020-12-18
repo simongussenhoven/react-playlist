@@ -4,7 +4,10 @@ function ListItem(props) {
     className="list__row"
     onClick={() => {props.deleteItem(props)}}
     >
-      <span>{props.title}</span><span>{props.artist}</span><span>{props.genre}</span><span>{props.rating}</span>
+      <span className="list__span">{props.title}</span>
+      <span className="list__span">{props.artist}</span>
+      <span className="list__span">{props.genre}</span>
+      <span className="list__span">{props.rating}</span>
     </div>
   );
 }

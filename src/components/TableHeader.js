@@ -22,34 +22,32 @@ import React from 'react'
   render() {
     return (
       
-      <div className="list__row"> 
-      <span>Title</span>
-      <span>Artist</span>
-      <span>
+      <div className="list__tableheader"> 
+      <span className="list__span">Title</span>
+      <span className="list__span">Artist</span>
+      <span className="list__span">
         <form>
-        <label>
-          <select value={this.state.genre} onChange={this.handleChange}>
+          <select className="list__select" value={this.state.genre} onChange={this.handleChange}>
           <option select value='All'>All genres</option>
             <option select value='Pop'>Pop</option>
             <option select value='Rock'>Rock</option>
             <option select value='Hiphop'>Hiphop</option>
+            <option select value='Hiphop'>Christmas</option>
             <option select value='Other'>Other</option>
+            <option></option>
           </select>
-        </label>
         </form>
       </span>
-      <span>
+      <span className="list__span">
         <form>
-        <label>
-          <select value={this.state.rating} onChange={this.handleChange}>
-          <option select value='All'>All ratings</option>
+          <select className="list__select" value={this.state.rating} onChange={this.handleChange}>
+          <option select value='?'>All ratings</option>
             <option select value='5'>5</option>
             <option select value='4'>4</option>
             <option select value='3'>3</option>
             <option select value='2'>2</option>
             <option select value='1'>1</option>
           </select>
-        </label>
         </form>
       </span>
       </div>

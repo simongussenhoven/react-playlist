@@ -6,13 +6,13 @@ function Nav() {
           <h1>React Playlist!</h1>
           <nav className='header__nav'>
               <ul className='header__list'> 
-                  <Link to="/playlist">
-                    <li className="header__item">Home</li>
+                  <Link className="header__item" to="/playlist">
+                    <li>Home</li>
                   </Link>
-                  <Link to="/about">
+                  <Link className="header__item" to="/about">
                     <li>About</li>
                   </Link>
-                  <Link to="/contact">
+                  <Link className="header__item" to="/contact">
                     <li>Contact</li>
                   </Link>
               </ul>

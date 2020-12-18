@@ -17,26 +17,27 @@ function Form(props) {
     }
 
     return (
-      <form onSubmit = {handleSubmit}>
-          <h2>Add a new song</h2>
-          <input name='title' type='text' required></input>
-          <input name='artist' type='text' required></input>
-          <select name='genre' required>
-              <option value='' selected={true}>Select a genre</option>
+      <form className="form" onSubmit = {handleSubmit}>
+          <h1 className="form__header">Add a new song</h1>
+          <input className="form__input" name='title' type='text' required placeholder="Enter song title"></input>
+          <input className="form__input"  name='artist' type='text' required placeholder="Enter artist" ></input>
+          <select className="form__select"  name='genre' required>
+              <option value=' '>Select a genre</option>
               <option value='Pop'>Pop</option>
               <option value='Rock'>Rock</option>
               <option value='Hiphop'>Hiphop</option>
+              <option value='Christmas'>Christmas</option>
               <option value='Other'>Other</option>
           </select>
-          <select name='rating' required>
-              <option value=''>Select a rating</option>
-              <option value='1'>5</option>
-              <option value='2'>4</option>
+          <select className="form__select"  name='rating' required>
+              <option value=' '>Select a rating</option>
+              <option value='5'>5</option>
+              <option value='4'>4</option>
               <option value='3'>3</option>
-              <option value='4'>2</option>
-              <option value='5'>1</option>
+              <option value='2'>2</option>
+              <option value='1'>1</option>
           </select>
-          <input type="submit"/>
+          <input className="form__input" type="submit"/>
       </form>
     );
   }

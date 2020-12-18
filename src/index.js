@@ -5,11 +5,11 @@ import Nav from './components/Nav';
 import About from './components/About';
 import Contact from './components/Contact'
 import './styles/style.css';
-import {BrowserRouter as Router, Switch, Route} from 'react-router-dom'
+import {BrowserRouter as Router, Route} from 'react-router-dom'
 
 
 ReactDOM.render(
-    <div class="container">
+    <div className="container">
       <Router>
         <Nav/>
         <Route path ="/playlist" component={App}/>
