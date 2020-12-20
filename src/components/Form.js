@@ -13,7 +13,8 @@ function Form(props) {
             rating: e.target.rating.value,
             visible: true
         }
-        props.addItem(newItem)  
+        props.addItem(newItem)
+        e.target.reset()
     }
 
     return (
@@ -22,7 +23,7 @@ function Form(props) {
           <input className="form__input" name='title' type='text' required placeholder="Enter song title"></input>
           <input className="form__input"  name='artist' type='text' required placeholder="Enter artist" ></input>
           <select className="form__select"  name='genre' required>
-              <option value=' '>Select a genre</option>
+              <option value=''>Select a genre</option>
               <option value='Pop'>Pop</option>
               <option value='Rock'>Rock</option>
               <option value='Hiphop'>Hiphop</option>
@@ -30,7 +31,7 @@ function Form(props) {
               <option value='Other'>Other</option>
           </select>
           <select className="form__select"  name='rating' required>
-              <option value=' '>Select a rating</option>
+              <option value=''>Select a rating</option>
               <option value='5'>5</option>
               <option value='4'>4</option>
               <option value='3'>3</option>

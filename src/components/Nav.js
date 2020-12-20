@@ -6,7 +6,7 @@ function Nav() {
           <h1>React Playlist!</h1>
           <nav className='header__nav'>
               <ul className='header__list'> 
-                  <Link className="header__item" to="/playlist">
+                  <Link className="header__item" to="/">
                     <li>Home</li>
                   </Link>
                   <Link className="header__item" to="/about">

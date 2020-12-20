@@ -8,9 +8,11 @@ import React from 'react'
     }
   //set component state, if value = 1, there's a rating. otherwise, there's a genre
     handleChange = async (e)=>{
+      //if input length is one, it's a rating
       if (e.target.value.length === 1) {
         await this.setState({rating: e.target.value})
       }
+      //otherwise, it's a genre
       else {
         await this.setState({genre: e.target.value})
       }
