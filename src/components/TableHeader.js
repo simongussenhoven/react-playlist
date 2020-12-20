@@ -3,7 +3,7 @@ import React from 'react'
   class TableHeader extends React.Component {
     constructor(props) {
       super(props);
-      this.state = {genre: 'All', rating: "All"};
+      this.state = {genre: 'All', rating: "?"};
       this.handleChange = this.handleChange.bind(this);;
     }
   //set component state, if value = 1, there's a rating. otherwise, there's a genre
@@ -11,6 +11,7 @@ import React from 'react'
       //if input length is one, it's a rating
       if (e.target.value.length === 1) {
         await this.setState({rating: e.target.value})
+        
       }
       //otherwise, it's a genre
       else {

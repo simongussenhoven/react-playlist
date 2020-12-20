@@ -40,16 +40,16 @@ deleteItem = (item) => {
 }
 //function to filter items
 filter = (genre, rating) => {
-const songs = this.state.songs
 
+const songs = this.state.songs
 //if no filter is set, show all
   if (genre === "All" && rating ==="?"){
+    console.log(`none: ${rating}, ${genre}`)
     songs.forEach(song => song.visible = true)
   }
 
 //if there is a filter on rating, check if it meets filter value
   else if (genre === "All") {
-    
     songs.forEach(song => {
       if(song.rating === rating) {
         song.visible=true
